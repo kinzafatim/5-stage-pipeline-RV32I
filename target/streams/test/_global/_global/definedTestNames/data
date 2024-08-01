@@ -1,0 +1,1 @@
+["single_cycle.Controltest","single_cycle.regfiletest","single_cycle.pctest","single_cycle.Alutest","single_cycle.branchtest","gcd.GCDSpec","single_cycle.RV32Itest","single_cycle.instr_memtest","single_cycle.immGentest"]
