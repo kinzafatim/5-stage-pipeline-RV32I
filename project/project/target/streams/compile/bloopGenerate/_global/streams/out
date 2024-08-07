@@ -1,4 +1,4 @@
-[debug] [root-5-stage-pipeline-rv32i-build-build] Classpath dependencies List()
-[debug] [root-5-stage-pipeline-rv32i-build-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'root-5-stage-pipeline-rv32i-build-build' to '/home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/.bloop/root-5-stage-pipeline-rv32i-build-build.json'
-[success] Generated .bloop/root-5-stage-pipeline-rv32i-build-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[root-5-stage-pipeline-rv32i-build-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[root-5-stage-pipeline-rv32i-build-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'root-5-stage-pipeline-rv32i-build-build' to '/home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/.bloop/root-5-stage-pipeline-rv32i-build-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/root-5-stage-pipeline-rv32i-build-build.json[0m

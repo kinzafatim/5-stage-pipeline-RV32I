@@ -1,10 +1,6 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(single_cycle.RV32Itest, org.scalatest.tools.Framework$$anon$1@69f90d22, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mRV32Itest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Rv32i Test[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 3 seconds, 655 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	single_cycle.RV32Itest[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 77 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 0, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33mNo tests were executed.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mNo tests to run for Test / testOnly[0m
