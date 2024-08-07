@@ -4825,3 +4825,7 @@ WARNING: Unmatched cancel notification for request id 16
 2024.08.07 22:53:00 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
 2024.08.07 22:53:01 INFO  time: indexed workspace in 6.02s
 2024.08.07 22:53:02 INFO  compiling root (10 scala sources)
+2024.08.07 22:53:19 INFO  compiling root-test (7 scala sources)
+2024.08.07 22:53:19 INFO  time: compiled root in 16s
+Aug 07, 2024 10:53:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
