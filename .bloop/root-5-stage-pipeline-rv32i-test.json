@@ -1,0 +1,147 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root-5-stage-pipeline-rv32i-test",
+        "directory": "/home/kinzaa/Desktop/5-stage-pipeline-RV32I",
+        "workspaceDir": "/home/kinzaa/Desktop/5-stage-pipeline-RV32I",
+        "sources": [
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/test/scala",
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/test/scala-2.12",
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/test/scala-2",
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/test/java",
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/target/scala-2.12/src_managed/test"
+        ],
+        "dependencies": [
+            "root-5-stage-pipeline-rv32i"
+        ],
+        "classpath": [
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/.bloop/root-5-stage-pipeline-rv32i/scala-2.12/classes",
+            "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-library.jar"
+        ],
+        "out": "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/.bloop/root-5-stage-pipeline-rv32i",
+        "classesDir": "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/.bloop/root-5-stage-pipeline-rv32i/scala-2.12/test-classes",
+        "resources": [
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/test/resources",
+            "/home/kinzaa/Desktop/5-stage-pipeline-RV32I/target/scala-2.12/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.12",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-xml_2.12-1.0.6.jar",
+                "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-library.jar",
+                "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-reflect.jar",
+                "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-compiler.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/kinzaa/.cache/coursier/arc/https/github.com/adoptium/temurin17-binaries/releases/download/jdk-17%252B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz/jdk-17+35",
+                "options": [
+                    "-Duser.dir=/home/kinzaa/Desktop/5-stage-pipeline-RV32I"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/kinzaa/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.12",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/kinzaa/.sbt/boot/scala-2.12.12/lib/scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/kinzaa/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
