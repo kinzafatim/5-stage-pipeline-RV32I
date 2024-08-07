@@ -1,13 +1,21 @@
-package single_cycle
+package pipeline
 
 import chisel3._
 import chisel3.util._
 import org.scalatest._
 import chiseltest._
 
-class Controltest extends FreeSpec with ChiselScalatestTester {
-  "Control Test" in {
-    test(new Control) { x =>
+class IDtest extends FreeSpec with ChiselScalatestTester {
+  "Decode Test" in {
+    test(new ID) { x =>
+        // regfile
+        x.io.readAddr1.poke(24.U)
+        x.io.readAddr2.poke(25.U)
+        x.io.writeAddr.poke(26.U)
+
+        x.io.writeData.poke(42.S)
+        x.io.writeEnable.poke(1.B)
+
       // Set inputs for the instruction li x1, 3
       x.io.instruction.poke("b00000000000000011001000010010011".U) // 00300093
       x.io.btaken.poke(false.B)
@@ -29,6 +37,12 @@ class Controltest extends FreeSpec with ChiselScalatestTester {
       x.io.aluImm.expect(true.B)      // ALU select immediate signal should be true
       x.io.branchfun3.expect(0.U)     // Branch function 3 should be 0
       x.io.pcsel.expect(false.B)      // Program counter select should be false
+
+
+
+      x.io.regrs1.expect(0.S) // reg file output
+      x.io.regrs2.expect(0.S) // reg file output
+
     }
   }
 }

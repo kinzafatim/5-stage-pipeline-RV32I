@@ -2,6 +2,17 @@ package pipeline
 import chisel3._
 import chisel3.util._
 
+object branch{
+
+  val beq   = 0.U(3.W)
+  val bne   = 1.U(3.W)
+  val blt   = 4.U(3.W)
+  val bge    = 5.U(3.W)
+  val bltu   = 6.U(3.W)
+  val bgeu   = 7.U(3.W) 
+}
+import branch._
+
 object alu_op {
   val alu_add = 0.U(4.W)
   val alu_sub = 1.U(4.W)
@@ -17,6 +28,14 @@ object alu_op {
 import alu_op._
 class EX extends Module {
   val io = IO(new Bundle{
+    // branch
+    val fnct3 = Input(UInt(3.W))
+    val branch= Input(Bool())
+    val x1 = Input(SInt(32.W))
+    val x2 = Input(SInt(32.W))
+    val br_taken = Output(Bool())
+
+    //ALU
     val in_A = Input(SInt(32.W))
     val in_B = Input(SInt(32.W))
     val alu_Op = Input(UInt(4.W))
@@ -71,4 +90,26 @@ class EX extends Module {
     }
   }
   io.sum := sum
+
+  io.br_taken:=0.B
+    switch(io.fnct3){
+        is(beq){
+            io.br_taken:= io.x1 === io.x2
+        }
+        is(bne){
+                io.br_taken:= io.x1 =/= io.x2
+        }
+        is(blt){
+                io.br_taken:= io.x1 < io.x2
+        }
+        is(bge){
+                io.br_taken:= io.x1 >= io.x2
+        }
+        is(bltu){
+                io.br_taken:= io.x1.asUInt < io.x2.asUInt
+        }
+        is(bgeu){
+                io.br_taken:= io.x1.asUInt >= io.x2.asUInt
+        }
+    }
 }

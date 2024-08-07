@@ -11,8 +11,8 @@ class ID extends Module {
     val writeData = Input(SInt(32.W))
     val writeEnable = Input(Bool()) 
     
-    val rs1 = Output(SInt(32.W)) // rs1
-    val rs2 = Output(SInt(32.W)) // rs2
+    val regrs1 = Output(SInt(32.W)) // regrs1
+    val regrs2 = Output(SInt(32.W)) // regrs2
 
 
     val instruction = Input(UInt(32.W))
@@ -41,8 +41,8 @@ class ID extends Module {
 
   val regFile = RegInit(VecInit(Seq.fill(32)(0.S(32.W)))) 
 
-  io.rs1 := Mux(io.readAddr1 === 0.U, 0.S, regFile(io.readAddr1)) // x0=0
-  io.rs2 := Mux(io.readAddr2 === 0.U, 0.S, regFile(io.readAddr2)) // x0=0
+  io.regrs1 := Mux(io.readAddr1 === 0.U, 0.S, regFile(io.readAddr1)) // x0=0
+  io.regrs2 := Mux(io.readAddr2 === 0.U, 0.S, regFile(io.readAddr2)) // x0=0
 
   when(io.writeEnable === 1.U) {
     regFile(io.writeAddr) := io.writeData
