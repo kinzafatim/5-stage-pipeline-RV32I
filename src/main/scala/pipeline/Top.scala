@@ -19,5 +19,4 @@ class Top extends Module {
   F_D_ins := fetch.io.instruction
 
 
-
 }
