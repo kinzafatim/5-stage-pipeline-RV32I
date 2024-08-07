@@ -4255,3 +4255,380 @@ WARNING: Unmatched cancel notification for request id 176
 2024.08.07 16:39:39 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.17s
 2024.08.07 16:47:26 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
 2024.08.07 16:47:26 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.44s
+2024.08.07 16:49:01 INFO  Shutting down server
+2024.08.07 16:49:01 INFO  shutting down Metals
+2024.08.07 16:49:01 INFO  Shut down connection with build server.
+Aug 07, 2024 4:49:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:135)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.onBuildExit(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:178)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:174)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:263)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:285)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:93)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:171)
+	at java.base/java.io.OutputStream.write(OutputStream.java:127)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:151)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 10 more
+
+Aug 07, 2024 4:49:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:135)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.onBuildExit(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:178)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:174)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:263)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:285)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:93)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:171)
+	at java.base/java.io.OutputStream.write(OutputStream.java:127)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:151)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 9 more
+
+2024.08.07 16:49:01 INFO  Shut down connection with build server.
+2024.08.07 16:49:01 INFO  Shut down connection with build server.
+2024.08.07 16:49:01 INFO  Exiting server
+2024.08.07 16:49:20 INFO  Started: Metals version 1.3.5 in folders '/home/kinzaa/Desktop/5-stage-pipeline-RV32I' for client Visual Studio Code 1.92.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@180c292e]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6258172e]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@180c292e]
+2024.08.07 16:49:21 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 16:49:22 INFO  Attempting to connect to the build server...
+2024.08.07 16:49:23 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.07 16:49:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 16:49:23 INFO  Attempting to connect to the build server...
+2024.08.07 16:49:23 INFO  Attempting to connect to the build server...
+2024.08.07 16:49:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 16:49:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 16:49:23 INFO  time: Connected to build server in 1.46s
+2024.08.07 16:49:23 INFO  Connected to Build server: Bloop v1.6.0
+2024.08.07 16:49:23 INFO  time: Imported build in 0.29s
+2024.08.07 16:49:25 INFO  running doctor check
+2024.08.07 16:49:25 INFO  java targets: root-5-stage-pipeline-rv32i-build-build, root-5-stage-pipeline-rv32i, root-5-stage-pipeline-rv32i-build, root-5-stage-pipeline-rv32i-test
+2024.08.07 16:49:25 WARN  2.12.12 is no longer supported in the current Metals versions, using the last known supported version 1.3.3
+Aug 07, 2024 4:49:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.08.07 16:49:30 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 16:49:31 INFO  time: indexed workspace in 6.1s
+2024.08.07 16:49:31 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:49:31 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.73s
+2024.08.07 16:49:31 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:49:32 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.26s
+2024.08.07 16:49:48 INFO  Shutting down server
+2024.08.07 16:49:48 INFO  shutting down Metals
+2024.08.07 16:49:48 INFO  Shut down connection with build server.
+2024.08.07 16:49:48 INFO  Shut down connection with build server.
+2024.08.07 16:49:48 INFO  Shut down connection with build server.
+2024.08.07 16:49:48 INFO  Exiting server
+2024.08.07 16:49:54 INFO  Started: Metals version 1.3.5 in folders '/home/kinzaa/Desktop/5-stage-pipeline-RV32I' for client Visual Studio Code 1.92.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5d63d176]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@54eb197]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5d63d176]
+2024.08.07 16:49:55 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 16:49:56 INFO  Attempting to connect to the build server...
+2024.08.07 16:49:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 16:49:57 INFO  Attempting to connect to the build server...
+2024.08.07 16:49:57 INFO  Attempting to connect to the build server...
+2024.08.07 16:49:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 16:49:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 16:49:57 INFO  time: Connected to build server in 0.8s
+2024.08.07 16:49:57 INFO  Connected to Build server: Bloop v1.6.0
+2024.08.07 16:49:57 INFO  time: Imported build in 0.28s
+2024.08.07 16:49:58 INFO  running doctor check
+2024.08.07 16:49:58 INFO  java targets: root-5-stage-pipeline-rv32i-build-build, root-5-stage-pipeline-rv32i, root-5-stage-pipeline-rv32i-build, root-5-stage-pipeline-rv32i-test
+2024.08.07 16:49:58 WARN  2.12.12 is no longer supported in the current Metals versions, using the last known supported version 1.3.3
+2024.08.07 16:50:04 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 16:50:05 INFO  time: indexed workspace in 7.71s
+2024.08.07 16:50:05 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:50:05 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.78s
+2024.08.07 16:50:05 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:50:06 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.28s
+2024.08.07 16:55:23 WARN  Could not find semantic tokens for: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.07 16:55:39 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:55:39 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.17s
+2024.08.07 16:55:41 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:55:41 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.13s
+2024.08.07 16:55:46 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:55:46 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.17s
+2024.08.07 16:55:55 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:55:55 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.13s
+2024.08.07 16:56:02 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:02 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.13s
+2024.08.07 16:56:05 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:05 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.11s
+Aug 07, 2024 4:56:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 138
+2024.08.07 16:56:09 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:11 INFO  time: compiled root-5-stage-pipeline-rv32i in 2.41s
+2024.08.07 16:56:14 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:15 INFO  time: compiled root-5-stage-pipeline-rv32i in 1.39s
+2024.08.07 16:56:15 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:16 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.9s
+2024.08.07 16:56:29 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:29 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.84s
+2024.08.07 16:56:46 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:46 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.7s
+2024.08.07 16:56:49 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:49 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.15s
+2024.08.07 16:56:50 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:50 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.85s
+2024.08.07 16:56:55 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:55 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.91s
+2024.08.07 16:56:56 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:56:56 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.13s
+2024.08.07 16:57:14 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:14 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.63s
+2024.08.07 16:57:16 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:16 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.77s
+2024.08.07 16:57:20 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:20 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.74s
+2024.08.07 16:57:22 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:22 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.64s
+2024.08.07 16:57:31 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:31 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.74s
+2024.08.07 16:57:34 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:34 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.6s
+2024.08.07 16:57:38 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:38 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.6s
+Aug 07, 2024 4:57:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 475
+2024.08.07 16:57:49 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:57:49 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.1s
+2024.08.07 16:58:11 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:58:11 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.66s
+2024.08.07 16:58:13 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:58:13 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.58s
+2024.08.07 16:58:15 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:58:15 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.5s
+2024.08.07 16:58:19 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:58:19 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.49s
+2024.08.07 16:59:25 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:59:25 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.54s
+2024.08.07 16:59:27 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 16:59:27 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.54s
+2024.08.07 17:02:31 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:02:31 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.52s
+2024.08.07 17:05:33 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:05:33 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.51s
+2024.08.07 17:05:52 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:05:52 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.51s
+2024.08.07 17:19:41 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:19:41 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.12s
+2024.08.07 17:19:45 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:19:45 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.1s
+2024.08.07 17:19:49 ERROR /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/EX.scala
+scala.meta.internal.tokenizers.package$UnexpectedInputEndException
+	at scala.meta.internal.tokenizers.LegacyScanner.$anonfun$nextToken$1(LegacyScanner.scala:172)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at scala.meta.internal.tokenizers.LegacyScanner.scala$meta$internal$tokenizers$LegacyScanner$$nextToken(LegacyScanner.scala:178)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:172)
+	at scala.meta.internal.mtags.ScalaToplevelMtags$XtensionScanner.mtagsNextToken(ScalaToplevelMtags.scala:72)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:500)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:84)
+	at scala.meta.internal.metals.SemanticdbDefinition$.foreachWithReturnMtags(SemanticdbDefinition.scala:81)
+	at scala.meta.internal.metals.Indexer.indexSourceFile(Indexer.scala:595)
+	at scala.meta.internal.metals.Indexer.$anonfun$reindexWorkspaceSources$3(Indexer.scala:693)
+	at scala.meta.internal.metals.Indexer.$anonfun$reindexWorkspaceSources$3$adapted(Indexer.scala:690)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1303)
+	at scala.meta.internal.metals.Indexer.reindexWorkspaceSources(Indexer.scala:690)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onChange$2(MetalsLspService.scala:952)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.08.07 17:19:49 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:19:49 INFO  time: compiled root-5-stage-pipeline-rv32i in 93ms
+2024.08.07 17:19:52 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:19:52 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.42s
+2024.08.07 17:20:05 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:20:05 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.45s
+2024.08.07 17:20:13 INFO  Shutting down server
+2024.08.07 17:20:13 INFO  shutting down Metals
+2024.08.07 17:20:13 INFO  Shut down connection with build server.
+2024.08.07 17:20:13 INFO  Shut down connection with build server.
+2024.08.07 17:20:13 INFO  Shut down connection with build server.
+2024.08.07 17:20:13 INFO  Exiting server
+2024.08.07 17:20:29 INFO  Started: Metals version 1.3.5 in folders '/home/kinzaa/Desktop/5-stage-pipeline-RV32I' for client Visual Studio Code 1.92.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5d63d176]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@54eb197]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5d63d176]
+2024.08.07 17:20:29 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 17:20:31 INFO  Attempting to connect to the build server...
+2024.08.07 17:20:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 17:20:32 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.07 17:20:32 INFO  Attempting to connect to the build server...
+2024.08.07 17:20:32 INFO  Attempting to connect to the build server...
+2024.08.07 17:20:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 17:20:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 17:20:34 INFO  time: Connected to build server in 3.52s
+2024.08.07 17:20:34 INFO  Connected to Build server: Bloop v1.6.0
+2024.08.07 17:20:34 INFO  time: Imported build in 0.11s
+2024.08.07 17:20:34 INFO  running doctor check
+2024.08.07 17:20:34 INFO  java targets: root-5-stage-pipeline-rv32i-build-build, root-5-stage-pipeline-rv32i, root-5-stage-pipeline-rv32i-build, root-5-stage-pipeline-rv32i-test
+2024.08.07 17:20:34 WARN  2.12.12 is no longer supported in the current Metals versions, using the last known supported version 1.3.3
+2024.08.07 17:20:38 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 17:20:40 INFO  time: indexed workspace in 5.5s
+2024.08.07 17:20:40 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+Aug 07, 2024 5:20:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+Aug 07, 2024 5:20:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+2024.08.07 17:20:42 INFO  time: compiled root-5-stage-pipeline-rv32i in 1.9s
+2024.08.07 17:20:42 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:20:42 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.91s
+2024.08.07 17:20:43 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:20:43 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.9s
+2024.08.07 17:21:12 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:21:12 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.53s
+2024.08.07 17:21:15 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:21:15 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.75s
+2024.08.07 17:22:19 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:22:20 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:22:22 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:23:05 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/ImmGen.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:23:05 INFO  time: code lens generation in 3.16s
+2024.08.07 17:23:05 INFO  time: code lens generation in 45s
+2024.08.07 17:23:05 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/Top.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:23:13 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:23:13 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:23:13 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.82s
+2024.08.07 17:23:13 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:23:15 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.99s
+2024.08.07 17:23:40 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:23:40 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:24:07 INFO  compiling root-5-stage-pipeline-rv32i (2 scala sources)
+2024.08.07 17:24:07 WARN  Invalid text document uri received from build server: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/ImmGen.scala
+2024.08.07 17:24:07 WARN  Invalid text document uri received from build server: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/ID.scala
+2024.08.07 17:24:07 WARN  Invalid text document uri received from build server: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/IF.scala
+2024.08.07 17:24:07 WARN  Invalid text document uri received from build server: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/EX.scala
+2024.08.07 17:24:07 WARN  Invalid text document uri received from build server: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/MA.scala
+2024.08.07 17:24:07 WARN  Invalid text document uri received from build server: file:///home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.07 17:24:07 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.22s
+2024.08.07 17:24:07 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:24:07 INFO  compiling root-5-stage-pipeline-rv32i (2 scala sources)
+2024.08.07 17:24:07 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.2s
+2024.08.07 17:24:07 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:24:07 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:24:07 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:24:08 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.62s
+2024.08.07 17:24:08 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:24:08 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.65s
+2024.08.07 17:25:37 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:25:37 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:26:01 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:26:01 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.49s
+2024.08.07 17:26:02 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:26:02 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/pipeline/EX.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2024.08.07 17:26:14 INFO  Shutting down server
+2024.08.07 17:26:14 INFO  shutting down Metals
+2024.08.07 17:26:14 INFO  Shut down connection with build server.
+2024.08.07 17:26:14 INFO  Shut down connection with build server.
+2024.08.07 17:26:14 INFO  Shut down connection with build server.
+2024.08.07 17:26:14 INFO  Exiting server
+2024.08.07 17:26:36 INFO  Started: Metals version 1.3.5 in folders '/home/kinzaa/Desktop/5-stage-pipeline-RV32I' for client Visual Studio Code 1.92.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5d63d176]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@54eb197]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5d63d176]
+2024.08.07 17:26:38 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 17:26:38 INFO  Attempting to connect to the build server...
+2024.08.07 17:26:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 17:26:38 INFO  Attempting to connect to the build server...
+2024.08.07 17:26:38 INFO  Attempting to connect to the build server...
+2024.08.07 17:26:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 17:26:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/.metals/bsp.trace.json or /home/kinzaa/.cache/metals/bsp.trace.json
+2024.08.07 17:26:39 INFO  time: Connected to build server in 1.05s
+2024.08.07 17:26:39 INFO  Connected to Build server: Bloop v1.6.0
+2024.08.07 17:26:39 INFO  no build target found for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/ID.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.07 17:26:39 INFO  time: Imported build in 0.2s
+2024.08.07 17:26:41 INFO  running doctor check
+2024.08.07 17:26:41 INFO  java targets: root-5-stage-pipeline-rv32i-build-build, root-5-stage-pipeline-rv32i, root-5-stage-pipeline-rv32i-build, root-5-stage-pipeline-rv32i-test
+2024.08.07 17:26:41 WARN  2.12.12 is no longer supported in the current Metals versions, using the last known supported version 1.3.3
+2024.08.07 17:26:44 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.07 17:26:46 INFO  time: indexed workspace in 4.89s
+2024.08.07 17:26:46 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:26:47 INFO  time: compiled root-5-stage-pipeline-rv32i in 1.53s
+2024.08.07 17:26:47 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:26:48 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.95s
+Aug 07, 2024 5:26:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+2024.08.07 17:29:20 INFO  time: code lens generation in 1.98s
+2024.08.07 17:29:20 INFO  time: code lens generation in 1.73s
+2024.08.07 17:29:23 INFO  running '/usr/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.08.07 17:29:25 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:29:26 INFO  time: compiled root-5-stage-pipeline-rv32i in 1.45s
+2024.08.07 17:29:30 ERROR WARNING: A terminally deprecated method in java.lang.System has been called
+2024.08.07 17:29:30 ERROR WARNING: System::setSecurityManager has been called by sbt.TrapExit$ (file:/home/kinzaa/.sbt/boot/scala-2.12.12/org.scala-sbt/sbt/1.4.9/run_2.12-1.4.9.jar)
+2024.08.07 17:29:30 ERROR WARNING: Please consider reporting this to the maintainers of sbt.TrapExit$
+2024.08.07 17:29:30 ERROR WARNING: System::setSecurityManager will be removed in a future release
+2024.08.07 17:29:31 INFO  [info] welcome to sbt 1.4.9 (Eclipse Adoptium Java 17)
+2024.08.07 17:29:34 INFO  [info] loading settings for project root-5-stage-pipeline-rv32i-build-build-build from metals.sbt ...
+2024.08.07 17:29:36 INFO  [info] loading project definition from /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project/project
+2024.08.07 17:29:39 INFO  [info] loading settings for project root-5-stage-pipeline-rv32i-build-build from metals.sbt ...
+2024.08.07 17:29:39 INFO  [info] loading project definition from /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project/project
+2024.08.07 17:29:44 INFO  [success] Generated .bloop/root-5-stage-pipeline-rv32i-build-build.json
+2024.08.07 17:29:44 INFO  [success] Total time: 5 s, completed Aug 7, 2024, 5:29:44 PM
+2024.08.07 17:29:44 INFO  [info] loading settings for project root-5-stage-pipeline-rv32i-build from metals.sbt,plugins.sbt ...
+2024.08.07 17:29:44 INFO  [info] loading project definition from /home/kinzaa/Desktop/5-stage-pipeline-RV32I/project
+2024.08.07 17:29:47 INFO  [success] Total time: 2 s, completed Aug 7, 2024, 5:29:47 PM
+2024.08.07 17:29:53 INFO  [info] loading settings for project root from build.sbt ...
+2024.08.07 17:29:53 INFO  [info] set current project to Scala-Chisel-Learning-Journey (in build file:/home/kinzaa/Desktop/5-stage-pipeline-RV32I/)
+2024.08.07 17:30:10 INFO  compiling root-5-stage-pipeline-rv32i (10 scala sources)
+2024.08.07 17:30:10 INFO  time: compiled root-5-stage-pipeline-rv32i in 0.76s
+2024.08.07 17:30:17 INFO  [success] Generated .bloop/root-test.json
+2024.08.07 17:30:17 INFO  [success] Generated .bloop/root.json
+2024.08.07 17:30:17 INFO  [warn] Removed stale /home/kinzaa/Desktop/5-stage-pipeline-RV32I/.bloop/root-5-stage-pipeline-rv32i-test.json
+2024.08.07 17:30:17 INFO  [warn] Removed stale /home/kinzaa/Desktop/5-stage-pipeline-RV32I/.bloop/root-5-stage-pipeline-rv32i.json
+2024.08.07 17:30:17 INFO  [success] Total time: 24 s, completed Aug 7, 2024, 5:30:17 PM
+2024.08.07 17:30:17 INFO  time: ran 'sbt bloopInstall' in 53s
+2024.08.07 17:30:17 INFO  Disconnecting from Bloop session...
+2024.08.07 17:30:17 INFO  Shut down connection with build server.
+2024.08.07 17:30:17 INFO  Shut down connection with build server.
+2024.08.07 17:30:17 INFO  Shut down connection with build server.
+2024.08.07 17:30:17 INFO  Attempting to connect to the build server...
+Aug 07, 2024 5:30:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 142
+Aug 07, 2024 5:30:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

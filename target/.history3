@@ -14,3 +14,5 @@
 1721282905137:export CHISELTEST_VCD=1
 1721282929493:testOnly single_cycle.RV321test -- -DwriteVcd=1
 1721283851861:testOnly single_cycle.RV32Itest -- -DwriteVcd=1
+1723032202251:testOnly Toptest -- -DwriteVcd=1
+1723033306810:testOnly Toptest

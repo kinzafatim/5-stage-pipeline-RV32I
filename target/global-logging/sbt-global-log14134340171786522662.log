@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly Toptest, Some(3d8c7ead-ec4d-4f2f-aa9e-75a882607490), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources to /home/kinzaa/Desktop/5-stage-pipeline-RV32I/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala:16:30: not found: type WB[0m
+[0m[[0m[31merror[0m] [0m[0m  val WriteBack = Module(new WB)[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 7 s, completed Aug 7, 2024, 5:30:04 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
