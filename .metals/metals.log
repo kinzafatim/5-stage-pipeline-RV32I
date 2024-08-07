@@ -4830,3 +4830,15 @@ WARNING: Unmatched cancel notification for request id 16
 Aug 07, 2024 10:53:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 25
 2024.08.07 22:53:27 INFO  time: compiled root-test in 8.5s
+Aug 07, 2024 10:56:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+2024.08.07 23:03:40 INFO  compiling root (1 scala source)
+2024.08.07 23:03:40 INFO  time: compiled root in 0.89s
+2024.08.07 23:03:43 INFO  compiling root (1 scala source)
+2024.08.07 23:03:44 INFO  time: compiled root in 1.25s
+Aug 07, 2024 11:03:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 153
+2024.08.07 23:03:47 INFO  compiling root (1 scala source)
+2024.08.07 23:03:47 INFO  time: compiled root in 0.5s
+2024.08.07 23:03:48 INFO  compiling root (1 scala source)
+2024.08.07 23:03:48 INFO  time: compiled root in 0.46s
