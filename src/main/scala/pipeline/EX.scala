@@ -1,4 +1,4 @@
-package single_cycle
+package pipeline
 import chisel3._
 import chisel3.util._
 
@@ -14,10 +14,8 @@ object alu_op {
   val alu_or = 12.U(4.W)
   val alu_and = 14.U(4.W)
 }
-
 import alu_op._
-
-class ALU extends Module {
+class EX extends Module {
   val io = IO(new Bundle{
     val in_A = Input(SInt(32.W))
     val in_B = Input(SInt(32.W))

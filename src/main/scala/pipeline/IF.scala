@@ -6,7 +6,7 @@ import chisel3.util.experimental.loadMemoryFromFile
 // Combined Module IF
 class IF(initFile: String) extends Module {
   val io = IO(new Bundle {
-    // pc inputs and outputs
+    // pc inputs/outputs
     val pcsel = Input(Bool())
     val aluout = Input(UInt(32.W))
     val pc_out = Output(UInt(32.W))

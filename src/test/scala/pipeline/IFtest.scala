@@ -9,10 +9,15 @@ import chiseltest.experimental.TestOptionBuilder . _
 class IFtest extends FreeSpec with ChiselScalatestTester {
 "Instruction Fetch Test" in{
     test(new IF("./src/main/scala/pipeline/test.txt")){ x =>
+        // x.io.pcsel.poke(.B)
+        // x.io.aluout.poke(.U)
+        
         x.io.addr.poke(24.U)
         
         x.clock.step(10)
 
         x.io.instruction.expect(0.U)
+        // x.io.pc_out.expect(.U)
+        // x.io.pc_4out.expect(.U)
     }}
     }

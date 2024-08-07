@@ -1,7 +1,7 @@
-package single_cycle
+package pipeline
 import chisel3._
 import chisel3.util._
-class Datamem extends Module {
+class MA extends Module {
   val io = IO(new Bundle{
     val addr      = Input(UInt(32.W))   // Address to read/write
     val writeData = Input(SInt(32.W))  // Data to write
