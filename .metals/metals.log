@@ -4875,3 +4875,73 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@583ad6c
 2024.08.08 11:47:05 INFO  time: compiled root in 1.61s
 2024.08.08 11:56:28 INFO  compiling root (1 scala source)
 2024.08.08 11:56:32 INFO  time: compiled root in 3.38s
+Aug 08, 2024 11:57:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 140
+2024.08.08 11:58:04 INFO  compiling root (1 scala source)
+2024.08.08 11:58:06 INFO  time: compiled root in 1.38s
+2024.08.08 11:58:22 INFO  compiling root (1 scala source)
+2024.08.08 11:58:22 INFO  time: compiled root in 0.41s
+2024.08.08 11:58:24 INFO  compiling root (1 scala source)
+2024.08.08 11:58:24 INFO  time: compiled root in 0.45s
+2024.08.08 11:58:27 INFO  compiling root (1 scala source)
+2024.08.08 11:58:27 INFO  time: compiled root in 0.41s
+2024.08.08 11:58:32 INFO  compiling root (1 scala source)
+Aug 08, 2024 11:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 318
+Aug 08, 2024 11:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 322
+Aug 08, 2024 11:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 317
+Aug 08, 2024 11:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 323
+Aug 08, 2024 11:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 325
+Aug 08, 2024 11:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 324
+2024.08.08 11:58:35 INFO  time: compiled root in 2.81s
+2024.08.08 11:58:36 INFO  compiling root (1 scala source)
+2024.08.08 11:58:36 INFO  time: compiled root in 0.38s
+2024.08.08 11:58:37 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:38 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:38 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:39 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:39 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:40 INFO  compiling root (1 scala source)
+2024.08.08 11:58:40 INFO  time: compiled root in 0.29s
+2024.08.08 11:58:42 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:43 INFO  compiling root (1 scala source)
+2024.08.08 11:58:43 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:43 INFO  time: compiled root in 0.5s
+Aug 08, 2024 11:58:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 390
+2024.08.08 11:58:44 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:45 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:46 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:46 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:46 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:46 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:48 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:48 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:49 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:50 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:51 INFO  compiling root (1 scala source)
+2024.08.08 11:58:51 INFO  time: compiled root in 0.3s
+2024.08.08 11:58:51 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:57 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:57 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:58 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:58:59 INFO  compiling root (1 scala source)
+2024.08.08 11:58:59 INFO  time: compiled root in 0.33s
+2024.08.08 11:59:00 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:02 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:03 INFO  compiling root (1 scala source)
+2024.08.08 11:59:03 INFO  time: compiled root in 0.28s
+2024.08.08 11:59:03 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:04 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:05 INFO  compiling root (1 scala source)
+2024.08.08 11:59:05 INFO  time: compiled root in 0.25s
+2024.08.08 11:59:05 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:05 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:06 INFO  compiling root (1 scala source)
+2024.08.08 11:59:06 INFO  time: compiled root in 0.25s
+2024.08.08 11:59:07 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
