@@ -1,29 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/kinzaa/Desktop/5-stage-pipeline-RV32I/target/scala-2.12/test-classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	pctest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	branchtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	instr_memtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	regfiletest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Alutest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RV32Itest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	immGentest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GCDSpec.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controltest.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	pctest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	branchtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	instr_memtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	regfiletest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Alutest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RV32Itest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	immGentest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GCDSpec.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controltest.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	EXtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IFtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	WBtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GCDSpec.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MAtest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IDtest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Toptest.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/kinzaa/Desktop/5-stage-pipeline-RV32I/target/scala-2.12/test-classes.bak[0m

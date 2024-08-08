@@ -14,15 +14,17 @@
 //   val branch = Module(new Branch)
 //   val control = Module(new Control)
 //   val datamem = Module(new Datamem)
-//   val InstrFetch = Module(new IF("/home/kinzaa/single cycle/src/main/scala/pipeline/test.txt"))
+//   // val immGen = Module(new ImmGen)
+//   val instrMem = Module(new Instr_mem("/home/kinzaa/single cycle/src/main/scala/single_cycle/test.txt"))
+//   val pc = Module(new Pc)
 //   val regFile = Module(new regfile)
 
 //   // Instruction memory fetch
 //   instrMem.io.addr := pc.io.pc_out
 
 //   // PC connections
-//   InstrFetch.io.pcsel := control.io.pcsel
-//   InstrFetch.io.aluout := alu.io.out.asUInt
+//   pc.io.pcsel := control.io.pcsel
+//   pc.io.aluout := alu.io.out.asUInt
 
 //   // Control module connections
 //   control.io.instruction := instrMem.io.instruction
@@ -53,7 +55,7 @@
 //   datamem.io.memWrite := control.io.memWrite
 
 //   when(control.io.jalrtype){ // JALR instruction
-//     regFile.io.writeData := InstrFetch.io.pc_4out.asSInt
+//     regFile.io.writeData := pc.io.pc_4out.asSInt
 //   }
 
 //   when(control.io.luitype) { // LUI instruction
@@ -61,7 +63,7 @@
 //   }
   
 //   when(control.io.auipctype) { // AUIPC instruction
-//     regFile.io.writeData := InstrFetch.io.pc_out.asSInt + control.io.imm 
+//     regFile.io.writeData := pc.io.pc_out.asSInt + control.io.imm 
 //   }
   
 //   io.out := alu.io.out
