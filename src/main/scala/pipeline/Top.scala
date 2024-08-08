@@ -17,6 +17,7 @@ class Top extends Module {
   // fetch and decode
   val F_D_ins = Reg(UInt(32.W))
   F_D_ins := fetch.io.instruction
+  
 
 
 }

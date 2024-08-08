@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala:16:30: not found: type WB[0m
-[0m[[0m[31merror[0m] [0m[0m  val WriteBack = Module(new WB)[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/ex.scala:5:7: Top is already defined as class Top[0m
+[0m[[0m[31merror[0m] [0m[0mclass Top extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
