@@ -4945,3 +4945,4 @@ WARNING: Unmatched cancel notification for request id 390
 2024.08.08 11:59:06 INFO  compiling root (1 scala source)
 2024.08.08 11:59:06 INFO  time: compiled root in 0.25s
 2024.08.08 11:59:07 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
+2024.08.08 11:59:21 WARN  Could not load snapshot text for /home/kinzaa/Desktop/5-stage-pipeline-RV32I/src/main/scala/pipeline/Top.scala
